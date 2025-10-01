@@ -29,6 +29,14 @@ Uma startup deseja oferecer entregas rápidas de pequenos pacotes usando drones 
 
 # Documentação
 
+## Diagrama de Classes
+![Imagem do WhatsApp de 2025-10-01 à(s) 17 19 19_b7c9e043](https://github.com/user-attachments/assets/8998561c-6ac2-4907-9a86-aff8250fda94)
+
+## Diagrama de Sequência
+![Imagem do WhatsApp de 2025-10-01 à(s) 17 25 13_ad0921a2](https://github.com/user-attachments/assets/58d30c3e-0503-4963-afc1-06eb494055d0)
+
+## Banco de Dados
+
 Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o seu conteúdo é publicado em **https://<usuario>.github.io/UML-Classroom-FCI/blob/master/docs/index.md**
 
 
