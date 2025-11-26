@@ -1,6 +1,6 @@
 import java.util.*;
-
 import java.util.UUID;
+import java.sql.SQLException;
 
 public class SolicitacaoEntrega {
     private UUID solicitacaoId;
@@ -21,6 +21,23 @@ public class SolicitacaoEntrega {
         }
         if (destino == null || destino.getCep() == null || destino.getCep().isEmpty()) {
             throw new Exception("Endereço inválido");
+        }
+    }
+
+    public void salvar() {
+        try {
+            this.validar();
+
+            // 2. Chama o DAO para persistir
+            SolicitacaoEntregaDAO dao = new SolicitacaoEntregaDAO();
+            dao.inserir(this);
+
+            System.out.println("Solicitação " + solicitacaoId + " salva com sucesso!");
+
+        } catch (SQLException e) {
+            System.err.println("Erro de Banco de Dados: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Erro de Validação: " + e.getMessage());
         }
     }
 

@@ -1,5 +1,3 @@
-import java.util.*;
-
 import java.util.UUID;
 
 public class Endereco {
@@ -31,3 +29,4 @@ public class Endereco {
     public String getEstado() { return estado; }
     public String getCep() { return cep; }
 }
+

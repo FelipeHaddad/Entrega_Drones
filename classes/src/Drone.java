@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.UUID;
 
- class Drone {
+public class Drone {
     private UUID droneId;
     private double bateriaPercentual;
     private double capacidadeMaxKg;
@@ -12,6 +12,31 @@ import java.util.UUID;
         this.bateriaPercentual = bateriaPercentual;
         this.capacidadeMaxKg = capacidadeMaxKg;
         this.historico = new ArrayList<>();
+    }
+
+    public void salvar() {
+        DroneDAO dao = new DroneDAO();
+        boolean sucesso = dao.inserir(this);
+
+        if (sucesso) {
+            System.out.println("Drone " + droneId + " cadastrado com sucesso no Banco de Dados!");
+        } else {
+            System.err.println("Erro ao salvar o Drone " + droneId);
+        }
+    }
+
+    public List<RegistroEntrega> consultarHistorico() {
+        DroneDAO dao = new DroneDAO();
+
+        List<RegistroEntrega> historicoDoBanco = dao.buscarHistoricoDoDrone(this.droneId);
+
+        this.historico = historicoDoBanco;
+
+        return this.historico;
+    }
+
+    public void adicionarRegistro(RegistroEntrega registro) {
+        historico.add(registro);
     }
 
     public boolean estaDisponivel() {
@@ -30,13 +55,15 @@ import java.util.UUID;
         return false;
     }
 
-    public List<RegistroEntrega> consultarHistorico() {
-        return historico;
+    public UUID getDroneId() {
+        return droneId;
     }
 
-    public void adicionarRegistro(RegistroEntrega registro) {
-        historico.add(registro);
+    public double getBateriaPercentual() {
+        return bateriaPercentual;
     }
 
-    public UUID getDroneId() { return droneId; }
+    public double getCapacidadeMaxKg() {
+        return capacidadeMaxKg;
+    }
 }

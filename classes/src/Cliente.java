@@ -16,15 +16,17 @@ public class Cliente {
         this.solicitacoes = new ArrayList<>();
     }
 
+    // Para rodar precisa conectar no Banco de Dados
     public List<SolicitacaoEntrega> consultarHistorico() {
-        return solicitacoes;
+        ClienteDAO dao = new ClienteDAO();
+        return dao.consultarHistoricoBD(this.clienteId);
     }
 
     public void adicionarSolicitacao(SolicitacaoEntrega s) {
         solicitacoes.add(s);
     }
 
-    // Getters
     public UUID getClienteId() { return clienteId; }
     public Endereco getEndereco() { return endereco; }
 }
+
