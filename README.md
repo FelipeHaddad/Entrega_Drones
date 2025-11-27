@@ -44,7 +44,7 @@ Uma startup deseja oferecer entregas rápidas de pequenos pacotes usando drones 
 ## ETAPA #6: Integração Sequência + Colaboração
 ![alt text](<Diagrama de Colaboraçao.jpg>)
 
-## ETAPA #7: Diagrma de estados
+## ETAPA #7: Diagrama de Estados
 ![alt text](<Diagrama de Estados.jpg>)
 
 
