@@ -30,23 +30,22 @@ Uma startup deseja oferecer entregas rápidas de pequenos pacotes usando drones 
 # Documentação
 
 ## ETAPA #2: Diagrama de Classes
-![Imagem do WhatsApp de 2025-10-01 à(s) 17 19 19_b7c9e043](https://github.com/user-attachments/assets/8998561c-6ac2-4907-9a86-aff8250fda94)
-![Imagem do WhatsApp de 2025-11-22 à(s) 16 40 03_a3e86670](https://github.com/user-attachments/assets/3f8fa414-c234-4f93-abd8-b12579b88acc)
+![alt text](<Diagrama de Classes.jpg>)
 
 ## ETAPA #3: Diagrama de Sequência
-![Imagem do WhatsApp de 2025-10-01 à(s) 17 25 13_ad0921a2](https://github.com/user-attachments/assets/58d30c3e-0503-4963-afc1-06eb494055d0)
-![Imagem do WhatsApp de 2025-11-22 à(s) 16 42 32_47d2fd3c](https://github.com/user-attachments/assets/9f3df274-3f60-4f07-a72a-41c974ac469a)
+![alt text](<Diagrama de Sequencia.jpg>)
 
 ## ETAPA #4: Classes + Banco de Dados
-![Imagem do WhatsApp de 2025-10-01 à(s) 20 47 17_ecc7f50c](https://github.com/user-attachments/assets/6d0ce729-f181-4efb-89e9-2fd19bba25ce)
+![alt text](<Banco de Dados.jpg>)
 
 ## ETAPA #5: Diagrama de Projeto (com abstrações e interfaces)
-![Imagem do WhatsApp de 2025-11-22 à(s) 16 46 35_f61b6051](https://github.com/user-attachments/assets/660af50b-7015-480a-8e38-7dd81688e9c2)
+![alt text](<Diagrama de Projeto.jpg>)
 
 ## ETAPA #6: Integração Sequência + Colaboração
+![alt text](<Diagrama de Colaboraçao.jpg>)
 
 ## ETAPA #7: Diagrma de estados
-![Imagem do WhatsApp de 2025-11-22 à(s) 17 13 18_b0287271](https://github.com/user-attachments/assets/ab1c8e71-e189-4c8a-b5df-804ccadba2e9)
+![alt text](<Diagrama de Estados.jpg>)
 
 
 
